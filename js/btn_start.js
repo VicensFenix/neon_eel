@@ -1,6 +1,3 @@
-// Qué hara este botón
-// El botón debe navegar a la página que esta dentro de mi carpeta html en el archivo game.html
-
 // Espera que todo el documento esté cargado
 window.addEventListener('DOMContentLoaded', () => {
     // Obtiene el botón por su ID
