@@ -1,8 +1,17 @@
+/* Variables css */
+:root {
+    /* Fondos */
+    --bg-maingame: linear-gradient(to bottom, #000428, #091016);
+    /* Bordes */
+    --border-game: #0000ff;
+}
+
 /* Estilos del main */
 .section-game {
-    background-color: var(--fondo-principal); 
-    min-height: 100vh;    
+    background: var(--bg-maingame); 
+    height: 100vh;    
     display: flex;          
     justify-content: center;
     align-items: center;
+    border: 0.2rem solid var(--border-game);
 }
