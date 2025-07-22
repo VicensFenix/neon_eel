@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/background_game.css">
+    <link rel="stylesheet" href="../css/game.css">
     <link rel="shortcut icon" href="../ico_game.ico" type="ico">
 </head>
 <body>
@@ -13,10 +13,16 @@
     <section class="section-game">
 
         <!-- Espacio del videojuego -->
-        <div class="game-space">
+        <div id="game-space" class="game">
+
+            <!-- Anguila del jugador -->
+            <div id="pj" class="player_pj"></div>
 
         </div>
 
     </section>
+
+    <!-- Cargar scripts en orden -->
+    <script src="../js/food_respown.js"></script>
 </body>
 </html>
