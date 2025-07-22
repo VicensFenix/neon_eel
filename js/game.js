@@ -1,13 +1,14 @@
-// Importamos modulos
-import { FoodManager } from "./food_respawn";
+// Importa la clase desde tu archivo FoodManager.js
+import { FoodManager } from './FoodManager.js';
 
-// Iniciar cuando la página esta cargada
+// Asegúrate de que el DOM esté cargado antes de ejecutar
 window.addEventListener('DOMContentLoaded', () => {
-    const manager = new FoodManager('game-space', {
-        foodClass: 'food',
-        foodSize: 20,
-        spawnInterval: 3000, // cada 3 segundos
-        lifespan: 6000,      // desaparece a los 6 segundos
-        foodCount: 6         // 6 comidas a la vez
+    // Inicia la clase pasando el id del contenedor (game-space)
+    const foodManager = new FoodManager('game-space', {
+        foodSize: 30,
+        foodCount: 5,
+        spawnInterval: 3000,
+        lifespan: 6000,
+        foodClass: 'food'
     });
 });
