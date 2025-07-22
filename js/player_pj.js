@@ -11,7 +11,7 @@ export class Player {
     constructor(containerId, options = {}) {
         this.container = document.getElementById(containerId);
         this.size = options.size || 30;
-        this.color = options.color || '#0f1f99ff';
+        this.color = options.color || '#21a7b1ff';
         this.speed = options.speed || 6;
 
         // Crea al jugador como un div
