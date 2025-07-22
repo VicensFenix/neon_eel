@@ -1,7 +1,7 @@
 /* Variables css */
 :root {
     /* Fondos */
-    --bg-maingame: linear-gradient(to bottom, #000428, #091016);
+    --bg-maingame: linear-gradient(to bottom, #000000, #091016);
     /* Bordes */
     --border-game: #0000ff;
 }
