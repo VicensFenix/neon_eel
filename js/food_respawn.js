@@ -6,8 +6,8 @@ export class FoodManager {
     this.foodClass = options.foodClass || 'food';
     this.foodSize = options.foodSize || 20;
     this.spawnInterval = options.spawnInterval || 3000;
-    this.lifespan = options.lifespan || 6000;
-    this.foodCount = options.foodCount || 6;
+    this.lifespan = options.lifespan || 8000;
+    this.foodCount = options.foodCount || 8;
 
     this.startSpawning();
     }
