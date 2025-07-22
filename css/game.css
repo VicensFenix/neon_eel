@@ -26,8 +26,8 @@
 
 /* Estilos de la comida */
 .food {
-    width: 30px;
-    height: 30px; 
+    width: 15px;
+    height: 15px; 
     background-color: var(--bg-food);
     border-radius: 50%;
     position: absolute;
