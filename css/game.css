@@ -9,9 +9,20 @@
 /* Estilos del main */
 .section-game {
     background: var(--bg-maingame); 
-    height: 100vh;    
     position: relative;
+    width: 100%;
+    height: 100vh; /* o el tamaño que uses */
     overflow: hidden;
     cursor: none;
     border: 0.2rem solid var(--border-game);
 }
+
+/* Estilos de la comida */
+.food {
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+
+
