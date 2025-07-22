@@ -10,8 +10,8 @@
 .section-game {
     background: var(--bg-maingame); 
     height: 100vh;    
-    display: flex;          
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
     border: 0.2rem solid var(--border-game);
 }
