@@ -17,7 +17,19 @@
     border: 0.2rem solid var(--border-game);
 }
 
+/* Estilos del game */
+.game {
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+}
+
+/* Estilos de la comida */
 .food {
+    width: 30px;
+    height: 30px; 
     background-color: var(--bg-food);
     border-radius: 50%;
+    position: absolute;
 }
+

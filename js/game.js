@@ -1,5 +1,5 @@
 // Importa la clase desde tu archivo FoodManager.js
-import { FoodManager } from './FoodManager.js';
+import { FoodManager } from './food_respawn.js';
 
 // Asegúrate de que el DOM esté cargado antes de ejecutar
 window.addEventListener('DOMContentLoaded', () => {
