@@ -33,6 +33,13 @@
     position: absolute;
 }
 
+/* Estilos del jugador */
+.player {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+}
+
 
 
 
