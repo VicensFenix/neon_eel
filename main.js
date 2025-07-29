@@ -2,13 +2,9 @@
 import { FoodManager } from './js/food_respawn.js';
 import { PlayerController } from './js/player_movement.js';
 import { FoodCollisionHandler } from './js/food_collision.js';
-import { MusicController } from './js/music_controller.js';
 
 // Espera a que el DOM esté completamente cargado antes de iniciar el juego
 window.addEventListener('DOMContentLoaded', () => {
-    // Inicializa el controlador de música
-    const musicController = new MusicController();
-    
     // Selecciona el espacio de juego y crea instancias de los manejadores
     const gameSpace = document.getElementById('game-space');
 
@@ -28,11 +24,4 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         new FoodCollisionHandler(playerController.player, gameSpace);
     }, 100);
-
-    // Opcional: Reproducir música al primer click si está pausada
-    gameSpace.addEventListener('click', () => {
-        if (!musicController.isPlaying) {
-            musicController.playMusic();
-        }
-    }, { once: true }); // Solo se ejecuta una vez
 });
