@@ -1,7 +1,7 @@
 // Importamos los modulos necesarios
 import { Player } from './player_pj.js';
 
-// Creamos la clase
+// Creamos la clase PlayerController que maneja el movimiento del jugador
 export class PlayerController {
     // El constructor recibe el id del contenedor donde se moverá el jugador y crea una instancia del jugador
     constructor(containerId) {

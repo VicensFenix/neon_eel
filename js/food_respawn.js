@@ -1,5 +1,6 @@
-// La clase principal sera FoodManager
+// La clase FoodManager se encarga de gestionar la creación y el manejo de la comida en el juego
 export class FoodManager {
+    // ✅ Constructor que inicializa el contenedor y las opciones
     constructor(containerId, options = {}) {
     // ✅ Definimos opciones con valores por defecto
     this.container = document.getElementById(containerId);
@@ -9,6 +10,7 @@ export class FoodManager {
     this.lifespan = options.lifespan || 8000;
     this.foodCount = options.foodCount || 8;
 
+    // 🏁 Iniciamos el proceso de creación de comida
     this.startSpawning();
     }
 
@@ -28,9 +30,11 @@ export class FoodManager {
         const x = Math.floor(Math.random() * maxX);
         const y = Math.floor(Math.random() * maxY);
 
+        // 🗺️ Asignamos la posición aleatoria
         food.style.left = `${x}px`;
         food.style.top = `${y}px`;
 
+        // 🥗 Añadimos la comida al contenedor
         this.container.appendChild(food);
 
         // ⏱️ Borrar comida después del tiempo de vida

@@ -1,0 +1,127 @@
+/* Variables css */
+:root {
+    /* Fondos */
+    --fondo-principal: #000000;
+    --fondo-btngame: #2211ff;
+    --fondo-btngame-active: #7d7ddc;
+    /* Colores */
+    --color-btngame: #efd6d6;
+    --color-btngame-active: #b81f1f;
+    /* Tipografias */
+    --fuente-btngame: 'Times New Roman', Times, serif;
+    /* Tamaño de letra */
+    --tamano-btngame: 1rem;
+}
+
+/* Estilos del main */
+.main {
+    background-color: var(--fondo-principal); 
+    min-height: 100vh;    
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding para evitar que toque bordes en móviles */
+}
+
+/* Contenedor del menú */
+.section-menu {
+    display: flex;
+    flex-direction: column; /* Por defecto en columna para móviles */
+    gap: 20px;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para pantallas grandes */
+    padding: 30px;
+    text-align: center;
+}
+
+/* Estilos base de botones */
+.btn-game {
+    background: var(--fondo-btngame);
+    color: var(--color-btngame);
+    font-family: var(--fuente-btngame);
+    font-size: var(--tamano-btngame);
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 250px; /* Máximo ancho para pantallas grandes */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Efectos de interacción */
+.btn-game:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-game:active {
+    background: var(--fondo-btngame-active); 
+    color: var(--color-btngame-active);
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para diferentes tamaños */
+
+/* Tabletas (600px en adelante) */
+@media (min-width: 600px) {
+    .section-menu {
+        flex-direction: row; /* Botones en fila */
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .btn-game {
+        width: 180px; /* Ancho fijo para tablet/desktop */
+    }
+}
+
+/* Escritorios medianos (900px en adelante) */
+@media (min-width: 900px) {
+    .section-menu {
+        max-width: 600px;
+    }
+    
+    .btn-game {
+        font-size: 1.1rem;
+        padding: 18px 30px;
+    }
+}
+
+/* Pantallas muy grandes (1200px en adelante) */
+@media (min-width: 1200px) {
+    .btn-game {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+}
+
+
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: rgba(34, 17, 255, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.music-btn:hover {
+    background: rgba(34, 17, 255, 1);
+    transform: scale(1.05);
+}
+
+.music-btn i {
+    margin-right: 5px;
+}
